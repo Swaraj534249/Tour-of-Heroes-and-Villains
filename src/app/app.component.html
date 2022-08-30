@@ -1,0 +1,97 @@
+<app-navbar></app-navbar>
+<h1 class="text-5xl text-gray-800 py-4">{{title}}</h1>
+
+
+<!-- <app-all-heroes></app-all-heroes> -->
+<router-outlet></router-outlet>
+<app-message></app-message>
+
+<!-- <div class="fixed z-30 w-screen">
+  <nav class=" text-black">
+    <div class="flex px-4 py-2">
+      <div class="flex-shrink-0">
+        <h1
+          class="py-1 md:pt-0 text-2xl md:text-3xl font-bold leading-tight tracking-tight focus:outline-none"
+          [routerLink]="['/']">
+          {{title}}
+        </h1>
+      </div>
+      <div class="hidden md:inline flex-grow mt-2 ml-8">
+        <ul class="flex text-lg md:text-xl">
+          <li class="mx-4">
+            <a
+              [routerLink]="['/dashboard']"
+              class="
+                px-3 py-1 rounded-md text-shadow text-center cursor-pointer
+                hover:bg-slate-400 focus:outline-none focus:bg-slate-400
+                "
+              >
+              Dashboard
+            </a>
+          </li>
+          <li class="mx-4 px-2">
+            <a
+              [routerLink]="['/heroes']"
+              class="
+                px-3 py-1 rounded-md text-shadow text-center cursor-pointer
+                hover:bg-slate-400 focus:outline-none focus:bg-slate-400
+                "
+              >
+              Heroes
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="-mr-2 flex flex-grow justify-end lg:hidden">
+        <button
+          (click)="toggleHamburger()"
+          class="
+            inline-flex items-center justify-center p-2 rounded-md text-gray-400
+            hover:text-white hover:bg-slate-400 focus:outline-none focus:bg-slate-400
+            focus:text-white active:text-white active:bg-slate-400
+            "
+          >
+          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+            <path [ngClass]="{'hidden': hamburgerOpen, 'inline-flex': !hamburgerOpen }"
+              class="inline-flex" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" d="M4 6h16M4 12h16M4 18h16"
+              />
+            <path [ngClass]="{'hidden': !hamburgerOpen, 'inline-flex': hamburgerOpen }"
+              class="hidden" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" d="M6 18L18 6M6 6l12 12"
+              />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div [hidden]="!hamburgerOpen" class="pb-2">
+      <ul class="text-lg md:text-xl">
+        <li class="mx-4">
+          <a
+            [routerLink]="['/dashboard']"
+            class="
+              px-3 py-1 rounded-md text-shadow text-center cursor-pointer
+              hover:bg-slate-400 focus:outline-none focus:bg-slate-400
+              "
+            >
+            Dashboard
+          </a>
+        </li>
+        <li class="mx-4">
+          <a
+            [routerLink]="['/heroes']"
+            class="
+              px-3 py-1 rounded-md text-shadow text-center cursor-pointer
+              hover:bg-slate-400 focus:outline-none focus:bg-slate-400
+              "
+            >
+            Heroes
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div> -->
+
+
+
